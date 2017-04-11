@@ -1,20 +1,24 @@
+﻿import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
-
+import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
-
+import { CrisisListComponent } from './crisis-list.component';
+import { HeroListComponent } from './hero-list.component';
+const appRoutes: Routes = [
+    { path: 'crisis-center', component: CrisisListComponent },
+    { path: 'heroes', component: HeroListComponent },
+    { path: '', redirectTo: '/heroes', pathMatch: 'full' }
+];
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-    HttpModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    imports: [
+        BrowserModule,
+        RouterModule.forRoot(appRoutes)
+    ],
+    declarations: [
+        AppComponent,
+        CrisisListComponent,
+        HeroListComponent
+    ],
+    bootstrap: [AppComponent]
 })
 export class AppModule { }

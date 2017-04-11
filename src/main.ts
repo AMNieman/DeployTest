@@ -1,10 +1,8 @@
-import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
-import { enableProdMode } from '@angular/core';
-import { environment } from './environments/environment';
+﻿import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { AppModule } from './app/app.module';
-
-if (environment.production) {
-  enableProdMode();
+import { enableProdMode } from '@angular/core';
+// Enable production mode unless running locally
+if (!/localhost/.test(document.location.host)) {
+    enableProdMode();
 }
-
 platformBrowserDynamic().bootstrapModule(AppModule);
