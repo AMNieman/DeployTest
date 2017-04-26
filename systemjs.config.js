@@ -4,9 +4,8 @@
     var map = {
         'app': 'app', // 'dist',
         'rxjs': 'node_modules/rxjs',
-        'angular2-in-memory-web-api': 'node_modules/angular2-in-memory-web-api',
+        'angular-in-memory-web-api': 'npm:angular-in-memory-web-api/bundles/in-memory-web-api.umd.js',
         '@angular': 'node_modules/@angular',
-        // "socket.io-client": "./node_modules/socket.io-client/socket.io.js",
         "@angular2-material":"./node_modules/@angular2-material"
     };
 
@@ -14,7 +13,6 @@
     var packages = {
         'app': { main: 'main.js', defaultExtension: 'js' },
         'rxjs': { defaultExtension: 'js' },
-        'angular2-in-memory-web-api': { defaultExtension: 'js' },
         '@angular2-material/core': {
             format: 'cjs',
             defaultExtension: 'js',
