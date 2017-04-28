@@ -1,5 +1,9 @@
 (function (global) {
 
+var paths= {
+      // paths serve as alias
+      'npm:': 'node_modules/'
+    };
     // map tells the System loader where to look for things
     var map = {
         'app': 'app', // 'dist',
@@ -45,7 +49,8 @@
 
     var config = {
         map: map,
-        packages: packages
+        packages: packages,
+        paths: paths
     }
 
     // filterSystemConfig - index.html's chance to modify config before we register it.
