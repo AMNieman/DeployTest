@@ -4,12 +4,12 @@
   "license": "MIT",
   "angular-cli": {},
   "scripts": {
-    "start": "ng serve",
-    "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e",
-    "postinstall": "ng build --aot -prod"
+    "start": "@angular/cli serve",
+    "build": "@angular/cli build",
+    "test": "@angular/cli test",
+    "lint": "@angular/cli lint",
+    "e2e": "@angular/cli e2e",
+    "postinstall": "@angular/cli build --aot -prod"
   },
   "private": true,
    "dependencies": {
