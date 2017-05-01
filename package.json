@@ -4,7 +4,6 @@
   "license": "MIT",
   "angular-cli": {},
   "scripts": {
-  //  "ngh": "ng",
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
