@@ -5,50 +5,29 @@
  */
 (function (global) {
   System.config({
+    // paths: {
+    //   'npm:': 'https://unpkg.com/' // path serves as alias
+    // },
+
     // map tells the System loader where to look for things
     map: {
       app: 'app', // location of transpiled app files
-    //   // angular minimized umd bundles
-    //   '@angular/core': 'npm:@angular/core/bundles/core.umd.min.js',
-    //   '@angular/common': 'npm:@angular/common/bundles/common.umd.min.js',
-    //   '@angular/compiler': 'npm:@angular/compiler/bundles/compiler.umd.min.js',
-    //   '@angular/platform-browser': 'npm:@angular/platform-browser/bundles/platform-browser.umd.min.js',
-    //   '@angular/platform-browser-dynamic': 'npm:@angular/platform-browser-dynamic/bundles/platform-browser-dynamic.umd.min.js',
-    //   '@angular/http': 'npm:@angular/http/bundles/http.umd.min.js',
-    //   '@angular/router': 'npm:@angular/router/bundles/router.umd.min.js',
-    //   '@angular/router/upgrade': 'npm:@angular/router/bundles/router-upgrade.umd.min.js',
-    //   '@angular/forms': 'npm:@angular/forms/bundles/forms.umd.min.js',
-    //   '@angular/upgrade': 'npm:@angular/upgrade/bundles/upgrade.umd.min.js',
-    //   '@angular/upgrade/static': 'npm:@angular/upgrade/bundles/upgrade-static.umd.min.js',
-    //   // other libraries
-    //   'rxjs':                      'npm:rxjs@5.0.1',
-    //   'angular-in-memory-web-api': 'npm:angular-in-memory-web-api/bundles/in-memory-web-api.umd.js'
-    // app: './src',
-    
-    '@angular/core': 'npm:@angular/core@2.4.1/bundles/core.umd.js',
-    '@angular/common': 'npm:@angular/common@2.4.1/bundles/common.umd.js',
-    '@angular/compiler': 'npm:@angular/compiler@2.4.1/bundles/compiler.umd.js',
-    '@angular/platform-browser': 'npm:@angular/platform-browser@2.4.1/bundles/platform-browser.umd.js',
-    '@angular/platform-browser-dynamic': 'npm:@angular/platform-browser-dynamic@2.4.1/bundles/platform-browser-dynamic.umd.js',
-    '@angular/http': 'npm:@angular/http@2.4.1/bundles/http.umd.js',
-    '@angular/router': 'npm:@angular/router@2.4.1/bundles/router.umd.js',
-    '@angular/forms': 'npm:@angular/forms@2.4.1/bundles/forms.umd.js',
-    '@angular/material' :'npm:@angular/material@2.4.1/bundles/material.umd.js',
-    
-    '@angular/core/testing': 'npm:@angular/core@2.4.1/bundles/core-testing.umd.js',
-    '@angular/common/testing': 'npm:@angular/common/bundles@2.4.1/common-testing.umd.js',
-    '@angular/compiler/testing': 'npm:@angular/compiler@2.4.1/bundles/compiler-testing.umd.js',
-    '@angular/platform-browser/testing': 'npm:@angular/platform-browser@2.4.1/bundles/platform-browser-testing.umd.js',
-    '@angular/platform-browser-dynamic/testing': 'npm:@angular/platform-browser-dynamic@2.4.1/bundles/platform-browser-dynamic-testing.umd.js',
-    '@angular/http/testing': 'npm:@angular/http@2.4.1/bundles/http-testing.umd.js',
-    '@angular/router/testing': 'npm:@angular/router@2.4.1/bundles/router-testing.umd.js',
-    
-    
-    'rxjs': 'npm:rxjs',
-    
-    'angular2-google-maps/core': 'npm:angular2-google-maps/core/core.umd.js'    
-
-},
+      // angular minimized umd bundles
+      '@angular/core': 'npm:@angular/core/bundles/core.umd.min.js',
+      '@angular/common': 'npm:@angular/common/bundles/common.umd.min.js',
+      '@angular/compiler': 'npm:@angular/compiler/bundles/compiler.umd.min.js',
+      '@angular/platform-browser': 'npm:@angular/platform-browser/bundles/platform-browser.umd.min.js',
+      '@angular/platform-browser-dynamic': 'npm:@angular/platform-browser-dynamic/bundles/platform-browser-dynamic.umd.min.js',
+      '@angular/http': 'npm:@angular/http/bundles/http.umd.min.js',
+      '@angular/router': 'npm:@angular/router/bundles/router.umd.min.js',
+      '@angular/router/upgrade': 'npm:@angular/router/bundles/router-upgrade.umd.min.js',
+      '@angular/forms': 'npm:@angular/forms/bundles/forms.umd.min.js',
+      '@angular/upgrade': 'npm:@angular/upgrade/bundles/upgrade.umd.min.js',
+      '@angular/upgrade/static': 'npm:@angular/upgrade/bundles/upgrade-static.umd.min.js',
+      // other libraries
+      'rxjs':                      'npm:rxjs@5.0.1',
+      'angular-in-memory-web-api': 'npm:angular-in-memory-web-api/bundles/in-memory-web-api.umd.js'
+    },
     // packages tells the System loader how to load when no filename and/or no extension
     packages: {
       app: {
